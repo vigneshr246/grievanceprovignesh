@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body class="dashboard">
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome, Admin {{ user.username }}!</p>
+        <nav>
+            <a href="{% url 'manage_users' %}">Manage Users</a>
+            <a href="{% url 'all_complaints' %}">View All Complaints</a>
+            <a href="{% url 'assign_complaints' %}">Assign Complaints</a>
+        </nav>
+    </div>
+</body>
+</html>
